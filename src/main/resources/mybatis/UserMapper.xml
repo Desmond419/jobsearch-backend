@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.learning.jobsearch.dao.UserDao">
+    <resultMap id="BaseResultMap"  type="com.learning.jobsearch.entity.User" >
+        <result column="id" property="id"  jdbcType="VARCHAR" />
+        <result column="first_name" property="firstName"  jdbcType="VARCHAR" />
+        <result column="last_name" property="lastName"  jdbcType="VARCHAR" />
+        <result column="email" property="email"  jdbcType="VARCHAR" />
+        <result column="password" property="password"  jdbcType="VARCHAR" />
+        <result column="dob" property="dob"  jdbcType="VARCHAR" />
+        <result column="mobile_no" property="mobileNo"  jdbcType="VARCHAR" />
+        <result column="gender" property="gender"  jdbcType="VARCHAR" />
+        <result column="address" property="address"  jdbcType="VARCHAR" />
+        <result column="address_city" property="addressCity"  jdbcType="VARCHAR" />
+        <result column="address_postal_code" property="addressPostalCode"  jdbcType="VARCHAR" />
+        <result column="address_state" property="addressState"  jdbcType="VARCHAR" />
+        <result column="address_country" property="addressCountry"  jdbcType="VARCHAR" />
+        <result column="id_no" property="idNo"  jdbcType="VARCHAR" />
+        <result column="role" property="role"  jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime"  jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime"  jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <select id="findByUserEmail"  resultMap="BaseResultMap">
+        select * from user where email=#{email}
+    </select>
+
+    <select id="findUserById"  resultMap="BaseResultMap">
+        select * from user where id=#{id}
+    </select>
+
+    <insert id="addUser">
+        insert into user(id,first_name,last_name,email,password,dob,mobile_no,gender,address,address_city,address_postal_code,address_state,address_country,id_no,role,create_time,update_time)
+        values(#{id},#{firstName},#{lastName},#{email},#{password},#{dob},#{mobileNo},#{gender},#{address},#{addressCity},#{addressPostalCode},#{addressState},#{addressCountry},#{idNo},#{role},now(),now())
+    </insert>
+
+    <update id="updateUser">
+        update user set
+        first_name = #{firstName},
+        last_name = #{lastName},
+        email = #{email},
+        mobile_no = #{mobileNo},
+        address = #{address},
+        address_city = #{addressCity},
+        address_postal_code = #{addressPostalCode},
+        address_state = #{addressState},
+        address_country = #{addressCountry},
+        role = #{role},
+        updated_time = now()
+        where id = #{id}
+    </update>
+
+    <delete id="deleteUserById">
+        delete from user where id =#{id}
+    </delete>
+</mapper>
