@@ -36,4 +36,87 @@ CREATE TABLE user
 INSERT INTO user(id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role)
 values ('1', 'admin', 'admin', 'admin@gmail.com', 'admin', '12-01-1920', '0123456789', 'Male', 'No 5, Jalan 20, Taman Malaysia', 'Kuala Lumpur', '57600', 'KL', 'Malaysia', '950516105361', 'Admin');
 
+-- ----------------------------
+-- Table structure for experience
+-- ----------------------------
+DROP TABLE IF EXISTS experience;
+CREATE TABLE experience
+(
+    id                  VARCHAR(255) NOT NULL PRIMARY KEY COMMENT 'id',
+    user_id             VARCHAR(255) COMMENT '用户id',
+    position_title      VARCHAR(255) NOT NULL COMMENT '职位名称',
+    company_name        VARCHAR(255) NOT NULL COMMENT '公司名称',
+    duration_from       VARCHAR(255) NOT NULL COMMENT '开始于',
+    duration_to         VARCHAR(255) NOT NULL COMMENT '结束于',
+    position_level      VARCHAR(255) NOT NULL COMMENT '职位级别',
+    salary              VARCHAR(255) COMMENT '薪水',
+    description         VARCHAR(255) COMMENT '岗位描述',
+    create_time         TIMESTAMP                             DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    update_time         TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+
+    FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+-- -----------
+-- Records of experience
+-- -----------
+INSERT INTO experience(id, position_title, company_name, duration_from, duration_to, position_level, salary, description)
+values ('1', 'Software Developer', 'IT Solution', '12-01-2017', '31-01-2020', 'Manager', '8500', 'An experienced Software Manager');
+
+-- ----------------------------
+-- Table structure for education
+-- ----------------------------
+DROP TABLE IF EXISTS education;
+CREATE TABLE education
+(
+    id                  VARCHAR(255) NOT NULL PRIMARY KEY COMMENT 'id',
+    user_id             VARCHAR(255) COMMENT '用户id',
+    university          VARCHAR(255) NOT NULL COMMENT '毕业大学',
+    graduation_date     VARCHAR(255) NOT NULL COMMENT '毕业日期',
+    qualification       VARCHAR(255) NOT NULL COMMENT '文凭',
+    field_of_study      VARCHAR(255) NOT NULL COMMENT '专业领域',
+    grade               VARCHAR(255) NOT NULL COMMENT 'CGPA/ Pass/ Non-gradable',
+    description         VARCHAR(255) COMMENT '专业描述',
+    create_time         TIMESTAMP                             DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    update_time         TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+
+    FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+-- ----------------------------
+-- Table structure for job
+-- ----------------------------
+DROP TABLE IF EXISTS job;
+CREATE TABLE job
+(
+    id                  VARCHAR(255) NOT NULL PRIMARY KEY COMMENT '用户id',
+    position_title      VARCHAR(255) NOT NULL COMMENT '职位名称',
+    address_state       VARCHAR(255) NOT NULL COMMENT '工作所在州属',
+    description         VARCHAR(255) NOT NULL COMMENT '工作内容描述',
+    salary              VARCHAR(255) NOT NULL COMMENT '薪水',
+    career_level        VARCHAR(255) COMMENT '职业等级',
+    qualification       VARCHAR(255) COMMENT '职位资格',
+    type                VARCHAR(255) COMMENT '工作类型 (Full-time/ Part-time/ Contract)',
+    create_time         TIMESTAMP                             DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    update_time         TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间'
+);
+
+-- ----------------------------
+-- Table structure for applications
+-- ----------------------------
+DROP TABLE IF EXISTS applications;
+CREATE TABLE applications
+(
+    id                  VARCHAR(255) NOT NULL PRIMARY KEY COMMENT 'id',
+    user_id             VARCHAR(255) COMMENT '用户id',
+    job_id              VARCHAR(255) COMMENT 'job id',
+    position_title      VARCHAR(255) NOT NULL COMMENT '职位名称',
+    company_name        VARCHAR(255) NOT NULL COMMENT '公司名称',
+    status              INTEGER NOT NULL COMMENT '1 = 成功，0 = 失败, 2 = In progress',
+    create_time         TIMESTAMP                             DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    update_time         TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+
+    FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE,
+    FOREIGN KEY (job_id) REFERENCES job (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
 SET FOREIGN_KEY_CHECKS = 1;
