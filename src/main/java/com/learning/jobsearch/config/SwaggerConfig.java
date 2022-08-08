@@ -17,44 +17,44 @@ import java.util.List;
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
-
-    private ApiKey apiKey() {
-        return new ApiKey("JWT", "Authorization", "header");
-    }
-
-    private SecurityContext securityContext() {
-        return SecurityContext.builder().securityReferences(defaultAuth()).build();
-    }
-
-    private List<SecurityReference> defaultAuth() {
-        AuthorizationScope authorizationScope = new AuthorizationScope("global", "accessEverything");
-        AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];
-        authorizationScopes[0] = authorizationScope;
-        return List.of(new SecurityReference("JWT", authorizationScopes));
-    }
-
-    @Bean
-    public Docket api() {
-        return new Docket(DocumentationType.SWAGGER_2)
-                .apiInfo(apiInfo())
-                .securityContexts(List.of(securityContext()))
-                .securitySchemes(List.of(apiKey()))
-                .select()
-                .apis(RequestHandlerSelectors.basePackage("com.learning.jobsearch.controller"))
-                .paths(PathSelectors.any())
-                .build();
-    }
-
-    private ApiInfo apiInfo() {
-        return new ApiInfo(
-                "Job Search Backend",
-                "Job Search Swagger API",
-                "1.0",
-                "",
-                new Contact("", "", ""),
-                "",
-                "",
-                Collections.emptyList());
-    }
+//
+//    private ApiKey apiKey() {
+//        return new ApiKey("JWT", "Authorization", "header");
+//    }
+//
+//    private SecurityContext securityContext() {
+//        return SecurityContext.builder().securityReferences(defaultAuth()).build();
+//    }
+//
+//    private List<SecurityReference> defaultAuth() {
+//        AuthorizationScope authorizationScope = new AuthorizationScope("global", "accessEverything");
+//        AuthorizationScope[] authorizationScopes = new AuthorizationScope[1];
+//        authorizationScopes[0] = authorizationScope;
+//        return List.of(new SecurityReference("JWT", authorizationScopes));
+//    }
+//
+//    @Bean
+//    public Docket api() {
+//        return new Docket(DocumentationType.SWAGGER_2)
+//                .apiInfo(apiInfo())
+//                .securityContexts(List.of(securityContext()))
+//                .securitySchemes(List.of(apiKey()))
+//                .select()
+//                .apis(RequestHandlerSelectors.basePackage("com.learning.jobsearch.controller"))
+//                .paths(PathSelectors.any())
+//                .build();
+//    }
+//
+//    private ApiInfo apiInfo() {
+//        return new ApiInfo(
+//                "Job Search Backend",
+//                "Job Search Swagger API",
+//                "1.0",
+//                "",
+//                new Contact("", "", ""),
+//                "",
+//                "",
+//                Collections.emptyList());
+//    }
 }
 
