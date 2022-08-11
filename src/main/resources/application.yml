@@ -6,9 +6,12 @@ spring:
       mode: always
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://remotemysql.com:3306/ciDVRhv2YK
-    username: ciDVRhv2YK                         # Change to your own db root
-    password: CGzBA0NORm                         # Change to your own db password
+    url: jdbc:mysql://db4free.net:3306/job_search_db
+    username: job_search_db
+    password: job_search_db
+#    url: jdbc:mysql://localhost:3306/job_search_db
+#    username: root
+#    password: 123456
     dbcp2:
       min-idle: 5                                # 数据库连接池的最小维持连接数
       initial-size: 5                            # 初始化连接数
