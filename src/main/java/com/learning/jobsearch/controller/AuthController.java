@@ -78,4 +78,9 @@ public class AuthController {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
     }
+    
+    @GetMapping("/test")
+    public ResponseEntity<String> Hello() {
+        return new ResponseEntity<>("Hello!", HttpStatus.OK);
+    }
 }
