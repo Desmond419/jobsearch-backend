@@ -31,7 +31,7 @@ public class JwtSecurityConfig implements WebMvcConfigurer {
     public void addInterceptors(InterceptorRegistry registry){
         List<String> excludePath = new ArrayList<>();
         excludePath.add("/api/auth/login");
-        excludePath.add("/api/auth/register");
+        //excludePath.add("/api/auth/register");
         excludePath.add("/static/**");
         excludePath.add("/assets/**");
 
