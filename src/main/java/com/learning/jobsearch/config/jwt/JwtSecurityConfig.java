@@ -42,7 +42,7 @@ public class JwtSecurityConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/**")
-                .allowedOrigins("http://localhost:3000/", "https://jobsearch-frontend-mxzqkztmf-learning-project.vercel.app/")
+                .allowedOrigins("http://localhost:3000/", "https://jobsearch-frontend.vercel.app/")
                 .allowedMethods("*");
     }
 }
