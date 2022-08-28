@@ -18,8 +18,8 @@ public class User {
     private String addressCountry;
     private String idNo; // IC Number
     private String role;
-    private Date createTime;
-    private Date updateTime;
+    private String createTime;
+    private String updateTime;
 
     public String getId() {
         return id;
@@ -141,19 +141,11 @@ public class User {
         this.role = role;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
+    public void setUpdateTime(String updateTime) {
         this.updateTime = updateTime;
     }
 }

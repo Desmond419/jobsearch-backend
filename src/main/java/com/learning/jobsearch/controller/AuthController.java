@@ -3,6 +3,7 @@ package com.learning.jobsearch.controller;
 import com.learning.jobsearch.config.jwt.JwtTokenUtil;
 import com.learning.jobsearch.entity.User;
 import com.learning.jobsearch.service.UserService;
+import com.learning.jobsearch.utils.DateTimeUtils;
 import com.learning.jobsearch.utils.GenUUID;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -70,6 +71,8 @@ public class AuthController {
             } else {
                 user.setId(new GenUUID().getUUID());
                 user.setPassword(passwordEncoder.encode(user.getPassword()));
+                user.setCreateTime(new DateTimeUtils().getCurrentTime());
+                user.setUpdateTime(new DateTimeUtils().getCurrentTime());
                 userService.addUser(user);
                 return new ResponseEntity<>(HttpStatus.CREATED);
             }

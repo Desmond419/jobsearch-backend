@@ -17,8 +17,8 @@
         <result column="address_country" property="addressCountry"  jdbcType="VARCHAR" />
         <result column="id_no" property="idNo"  jdbcType="VARCHAR" />
         <result column="role" property="role"  jdbcType="VARCHAR" />
-        <result column="create_time" property="createTime"  jdbcType="TIMESTAMP" />
-        <result column="update_time" property="updateTime"  jdbcType="TIMESTAMP" />
+        <result column="create_time" property="createTime"  jdbcType="VARCHAR" />
+        <result column="update_time" property="updateTime"  jdbcType="VARCHAR" />
     </resultMap>
 
     <select id="findByUserEmail"  resultMap="BaseResultMap">
@@ -31,7 +31,7 @@
 
     <insert id="addUser">
         insert into user(id,first_name,last_name,email,password,dob,mobile_no,gender,address,address_city,address_postal_code,address_state,address_country,id_no,role,create_time,update_time)
-        values(#{id},#{firstName},#{lastName},#{email},#{password},#{dob},#{mobileNo},#{gender},#{address},#{addressCity},#{addressPostalCode},#{addressState},#{addressCountry},#{idNo},#{role},now(),now())
+        values(#{id},#{firstName},#{lastName},#{email},#{password},#{dob},#{mobileNo},#{gender},#{address},#{addressCity},#{addressPostalCode},#{addressState},#{addressCountry},#{idNo},#{role},#{createTime},#{updateTime})
     </insert>
 
     <update id="updateUser">
@@ -46,7 +46,7 @@
         address_state = #{addressState},
         address_country = #{addressCountry},
         role = #{role},
-        updated_time = now()
+        update_time = #{updateTime}
         where id = #{id}
     </update>
 

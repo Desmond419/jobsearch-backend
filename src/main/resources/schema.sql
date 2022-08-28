@@ -27,8 +27,8 @@ CREATE TABLE user
     address_country     VARCHAR(255) COMMENT '国家',
     id_no               VARCHAR(255) COMMENT '身份证',
     role                VARCHAR(255) NOT NULL COMMENT '角色/权限',
-    create_time         TIMESTAMP                             DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-    update_time         TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间'
+    create_time         VARCHAR(255) COMMENT '创建时间',
+    update_time         VARCHAR(255) COMMENT '更新时间'
 );
 -- -----------
 -- Records of user
@@ -51,8 +51,8 @@ CREATE TABLE experience
     position_level      VARCHAR(255) NOT NULL COMMENT '职位级别',
     salary              VARCHAR(255) COMMENT '薪水',
     description         VARCHAR(255) COMMENT '岗位描述',
-    create_time         TIMESTAMP                             DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-    update_time         TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+    create_time         VARCHAR(255) COMMENT '创建时间',
+    update_time         VARCHAR(255) COMMENT '更新时间',
 
     FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -76,8 +76,8 @@ CREATE TABLE education
     field_of_study      VARCHAR(255) NOT NULL COMMENT '专业领域',
     grade               VARCHAR(255) NOT NULL COMMENT 'CGPA/ Pass/ Non-gradable',
     description         VARCHAR(255) COMMENT '专业描述',
-    create_time         TIMESTAMP                             DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-    update_time         TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+    create_time         VARCHAR(255) COMMENT '创建时间',
+    update_time         VARCHAR(255) COMMENT '更新时间',
 
     FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
@@ -96,8 +96,8 @@ CREATE TABLE job
     career_level        VARCHAR(255) COMMENT '职业等级',
     qualification       VARCHAR(255) COMMENT '职位资格',
     type                VARCHAR(255) COMMENT '工作类型 (Full-time/ Part-time/ Contract)',
-    create_time         TIMESTAMP                             DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-    update_time         TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间'
+    create_time         VARCHAR(255) COMMENT '创建时间',
+    update_time         VARCHAR(255) COMMENT '更新时间'
 );
 
 -- ----------------------------
@@ -112,8 +112,8 @@ CREATE TABLE applications
     position_title      VARCHAR(255) NOT NULL COMMENT '职位名称',
     company_name        VARCHAR(255) NOT NULL COMMENT '公司名称',
     status              INTEGER NOT NULL COMMENT '1 = 成功，0 = 失败, 2 = In progress',
-    create_time         TIMESTAMP                             DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
-    update_time         TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+    create_time         VARCHAR(255) COMMENT '创建时间',
+    update_time         VARCHAR(255) COMMENT '更新时间',
 
     FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (job_id) REFERENCES job (id) ON DELETE CASCADE ON UPDATE CASCADE
