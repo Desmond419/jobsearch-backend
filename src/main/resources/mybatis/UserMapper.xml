@@ -17,6 +17,7 @@
         <result column="address_country" property="addressCountry"  jdbcType="VARCHAR" />
         <result column="id_no" property="idNo"  jdbcType="VARCHAR" />
         <result column="role" property="role"  jdbcType="VARCHAR" />
+        <result column="img" property="image"  jdbcType="VARCHAR" />
         <result column="create_time" property="createTime"  jdbcType="VARCHAR" />
         <result column="update_time" property="updateTime"  jdbcType="VARCHAR" />
     </resultMap>
@@ -48,6 +49,13 @@
         role = #{role},
         update_time = #{updateTime}
         where id = #{id}
+    </update>
+
+    <update id="uploadImageByUid">
+        UPDATE user SET
+        img = #{image}
+        where
+        id = #{id}
     </update>
 
     <delete id="deleteUserById">

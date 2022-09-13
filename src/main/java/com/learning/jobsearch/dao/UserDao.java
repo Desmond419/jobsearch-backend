@@ -10,4 +10,5 @@ public interface UserDao {
     User findUserById(String id);
     void updateUser(User user);
     void deleteUserById(String id);
+    Integer uploadImageByUid(String id, String image);
 }
