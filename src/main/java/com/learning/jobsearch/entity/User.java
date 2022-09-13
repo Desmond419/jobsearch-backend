@@ -1,7 +1,5 @@
 package com.learning.jobsearch.entity;
 
-import java.util.Date;
-
 public class User {
     private String id;
     private String firstName;
@@ -18,6 +16,7 @@ public class User {
     private String addressCountry;
     private String idNo; // IC Number
     private String role;
+    private String image;
     private String createTime;
     private String updateTime;
 
@@ -141,8 +140,24 @@ public class User {
         this.role = role;
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getCreateTime() {
+        return createTime;
+    }
+
     public void setCreateTime(String createTime) {
         this.createTime = createTime;
+    }
+
+    public String getUpdateTime() {
+        return updateTime;
     }
 
     public void setUpdateTime(String updateTime) {

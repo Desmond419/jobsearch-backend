@@ -27,6 +27,7 @@ CREATE TABLE user
     address_country     VARCHAR(255) COMMENT '国家',
     id_no               VARCHAR(255) COMMENT '身份证',
     role                VARCHAR(255) NOT NULL COMMENT '角色/权限',
+    img                 VARCHAR(255) COMMENT '头像',
     create_time         VARCHAR(255) COMMENT '创建时间',
     update_time         VARCHAR(255) COMMENT '更新时间'
 );
@@ -35,6 +36,7 @@ CREATE TABLE user
 -- -----------
 INSERT INTO user(id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role)
 values ('1', 'admin', 'admin', 'admin@gmail.com', 'admin', '12-01-1920', '0123456789', 'Male', 'No 5, Jalan 20, Taman Malaysia', 'Kuala Lumpur', '57600', 'KL', 'Malaysia', '950516105361', 'Admin');
+
 
 -- ----------------------------
 -- Table structure for experience
