@@ -1,7 +1,6 @@
 package com.learning.jobsearch.service;
 
 import com.learning.jobsearch.entity.User;
-import com.learning.jobsearch.exception.UserNotFoundException;
 
 public interface UserService {
     void addUser(User user);

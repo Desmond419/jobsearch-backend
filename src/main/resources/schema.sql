@@ -45,7 +45,7 @@ DROP TABLE IF EXISTS experience;
 CREATE TABLE experience
 (
     id                  VARCHAR(255) NOT NULL PRIMARY KEY COMMENT 'id',
-    user_id             VARCHAR(255) COMMENT '用户id',
+    user_id             VARCHAR(255) NOT NULL COMMENT '用户id',
     position_title      VARCHAR(255) NOT NULL COMMENT '职位名称',
     company_name        VARCHAR(255) NOT NULL COMMENT '公司名称',
     duration_from       VARCHAR(255) NOT NULL COMMENT '开始于',
@@ -61,8 +61,8 @@ CREATE TABLE experience
 -- -----------
 -- Records of experience
 -- -----------
-INSERT INTO experience(id, position_title, company_name, duration_from, duration_to, position_level, salary, description)
-values ('1', 'Software Developer', 'IT Solution', '12-01-2017', '31-01-2020', 'Manager', '8500', 'An experienced Software Manager');
+INSERT INTO experience(id, user_id, position_title, company_name, duration_from, duration_to, position_level, salary, description)
+values ('1', '1', 'Software Developer', 'IT Solution', '12-01-2017', '31-01-2020', 'Manager', '8500', 'An experienced Software Manager');
 
 -- ----------------------------
 -- Table structure for education
@@ -71,7 +71,7 @@ DROP TABLE IF EXISTS education;
 CREATE TABLE education
 (
     id                  VARCHAR(255) NOT NULL PRIMARY KEY COMMENT 'id',
-    user_id             VARCHAR(255) COMMENT '用户id',
+    user_id             VARCHAR(255) NOT NULL COMMENT '用户id',
     university          VARCHAR(255) NOT NULL COMMENT '毕业大学',
     graduation_date     VARCHAR(255) NOT NULL COMMENT '毕业日期',
     qualification       VARCHAR(255) NOT NULL COMMENT '文凭',

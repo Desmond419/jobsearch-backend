@@ -7,6 +7,8 @@ import com.learning.jobsearch.utils.DateTimeUtils;
 import com.learning.jobsearch.utils.GenUUID;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +22,8 @@ import java.util.Map;
 @Api(tags = "Authentication")
 @RequestMapping("/api/auth")
 public class AuthController {
+    Logger logger = LoggerFactory.getLogger(AuthController.class);
+
     @Autowired
     private UserService userService;
 
@@ -57,6 +61,7 @@ public class AuthController {
         } catch (Exception e){
             map.put("code", "500");
             map.put("message", "Internal Server Error");
+            logger.error("Login error: " + e.getMessage());
             return map;
         }
     }
@@ -77,13 +82,8 @@ public class AuthController {
                 return new ResponseEntity<>(HttpStatus.CREATED);
             }
         } catch (Exception e){
-            System.out.println(e.getMessage());
+            logger.error("Register error: " + e.getMessage());
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
         }
-    }
-    
-    @GetMapping("/test")
-    public ResponseEntity<String> Hello() {
-        return new ResponseEntity<>("Hello!", HttpStatus.OK);
     }
 }

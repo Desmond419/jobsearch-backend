@@ -1,0 +1,25 @@
+[2022-09-14T11:47:02.002Z] [org.springframework.boot.StartupInfoLogger] [main] [55] [INFO ] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 12280 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+[2022-09-14T11:47:02.002Z] [org.springframework.boot.SpringApplication] [main] [634] [INFO ] No active profile set, falling back to 1 default profile: "default"
+[2022-09-14T11:47:03.003Z] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+[2022-09-14T11:47:03.003Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing ProtocolHandler ["http-nio-8080"]
+[2022-09-14T11:47:03.003Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting service [Tomcat]
+[2022-09-14T11:47:03.003Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-09-14T11:47:03.003Z] [org.apache.juli.logging.DirectJDKLog] [main] [173] [INFO ] Initializing Spring embedded WebApplicationContext
+[2022-09-14T11:47:03.003Z] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] [main] [292] [INFO ] Root WebApplicationContext: initialization completed in 1391 ms
+[2022-09-14T11:47:04.004Z] [springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping] [main] [69] [INFO ] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-09-14T11:47:04.004Z] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] [main] [88] [WARN ] 
+
+Using generated security password: c5975160-3280-4985-b20f-3f60ddf469a2
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+[2022-09-14T11:47:04.004Z] [org.springframework.security.web.DefaultSecurityFilterChain] [main] [55] [INFO ] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@21c75084, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d16209e, org.springframework.security.web.context.SecurityContextPersistenceFilter@22b7ef2b, org.springframework.security.web.header.HeaderWriterFilter@3d8d970e, org.springframework.web.filter.CorsFilter@75527e36, org.springframework.security.web.authentication.logout.LogoutFilter@37b1149b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1426370c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3c17bd0b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ce15112, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@76596288, org.springframework.security.web.session.SessionManagementFilter@7babed9e, org.springframework.security.web.access.ExceptionTranslationFilter@6164e137, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7afbf2a0]
+[2022-09-14T11:47:04.004Z] [com.zaxxer.hikari.HikariDataSource] [main] [110] [INFO ] HikariPool-1 - Starting...
+[2022-09-14T11:47:11.011Z] [com.zaxxer.hikari.HikariDataSource] [main] [123] [INFO ] HikariPool-1 - Start completed.
+[2022-09-14T11:47:28.028Z] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] [main] [220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+[2022-09-14T11:47:28.028Z] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] [main] [160] [INFO ] Context refreshed
+[2022-09-14T11:47:28.028Z] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper] [main] [163] [INFO ] Found 1 custom documentation plugin(s)
+[2022-09-14T11:47:28.028Z] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner] [main] [41] [INFO ] Scanning for api listing references
+[2022-09-14T11:47:28.028Z] [org.springframework.boot.StartupInfoLogger] [main] [61] [INFO ] Started JobsearchApplication in 26.398 seconds (JVM running for 26.766)
+[2022-09-14T11:47:28.028Z] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [350] [INFO ] HikariPool-1 - Shutdown initiated...
+[2022-09-14T11:47:31.031Z] [com.zaxxer.hikari.HikariDataSource] [SpringApplicationShutdownHook] [352] [INFO ] HikariPool-1 - Shutdown completed.

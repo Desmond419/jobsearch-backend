@@ -2,6 +2,8 @@ package com.learning.jobsearch.controller;
 
 import com.learning.jobsearch.service.UserService;
 import com.learning.jobsearch.utils.GenUUID;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +22,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 public class ImageController {
+    Logger logger = LoggerFactory.getLogger(ImageController.class);
 
     @Autowired
     private UserService userService;
@@ -41,12 +44,12 @@ public class ImageController {
                                               @RequestParam("userId") String userId, HttpSession session) {
         // Check whether image is empty
         if (file.isEmpty()) {
-            return new ResponseEntity<>("Image file is not allowed to be empty", HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>("Image file is not allowed to be empty", HttpStatus.BAD_REQUEST);
         }
 
         // Check whether image size exceed limit
         if (file.getSize() > IMAGE_MAX_SIZE) {
-            return new ResponseEntity<>("Image size " + (IMAGE_MAX_SIZE / 1024) + " is not allowed", HttpStatus.NO_CONTENT);
+            return new ResponseEntity<>("Image size " + (IMAGE_MAX_SIZE / 1024) + " is not allowed", HttpStatus.BAD_REQUEST);
         }
 
         // Check image file type
@@ -81,6 +84,7 @@ public class ImageController {
         } catch (IllegalStateException e) {
             return new ResponseEntity<>("Upload failed, the file has been moved or deleted", HttpStatus.NO_CONTENT);
         } catch (IOException e) {
+            logger.error("Upload image error: " + e.getMessage());
             return new ResponseEntity<>("Error when uploading files, please try again later", HttpStatus.INTERNAL_SERVER_ERROR);
         }
 

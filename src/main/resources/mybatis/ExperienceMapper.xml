@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.learning.jobsearch.dao.ExperienceDao">
+    <resultMap id="BaseResultMap"  type="com.learning.jobsearch.entity.Experience" >
+        <result column="id" property="id"  jdbcType="VARCHAR" />
+        <result column="user_id" property="userId"  jdbcType="VARCHAR" />
+        <result column="position_title" property="positionTitle"  jdbcType="VARCHAR" />
+        <result column="company_name" property="companyName"  jdbcType="VARCHAR" />
+        <result column="duration_from" property="durationFrom"  jdbcType="VARCHAR" />
+        <result column="duration_to" property="durationTo"  jdbcType="VARCHAR" />
+        <result column="position_level" property="positionLevel"  jdbcType="VARCHAR" />
+        <result column="salary" property="salary"  jdbcType="VARCHAR" />
+        <result column="description" property="description"  jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime"  jdbcType="VARCHAR" />
+        <result column="update_time" property="updateTime"  jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="findExperienceByUserId"  resultMap="BaseResultMap">
+        select * from experience where user_id=#{userId}
+    </select>
+
+    <insert id="addExperienceByUserId">
+        insert into experience(id,user_id,position_title,company_name,duration_from,duration_to,position_level,salary,description,create_time,update_time)
+        values(#{id},#{userId},#{positionTitle},#{companyName},#{durationFrom},#{durationTo},#{positionLevel},#{salary},#{description},#{createTime},#{updateTime})
+    </insert>
+
+    <update id="updateExperienceByUserId">
+        update experience set
+        position_title = #{positionTitle},
+        company_name = #{companyName},
+        duration_from = #{durationFrom},
+        duration_to = #{durationTo},
+        position_level = #{positionLevel},
+        salary = #{salary},
+        description = #{description},
+        update_time = #{updateTime}
+        where id = #{id} and user_id = #{userId}
+    </update>
+
+    <delete id="deleteExperienceById">
+        delete from experience where id =#{id}
+    </delete>
+</mapper>

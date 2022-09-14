@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.learning.jobsearch.dao.EducationDao">
+    <resultMap id="BaseResultMap"  type="com.learning.jobsearch.entity.Education" >
+        <result column="id" property="id"  jdbcType="VARCHAR" />
+        <result column="user_id" property="userId"  jdbcType="VARCHAR" />
+        <result column="university" property="university"  jdbcType="VARCHAR" />
+        <result column="graduation_date" property="graduationDate"  jdbcType="VARCHAR" />
+        <result column="qualification" property="qualification"  jdbcType="VARCHAR" />
+        <result column="field_of_study" property="fieldOfStudy"  jdbcType="VARCHAR" />
+        <result column="grade" property="grade"  jdbcType="VARCHAR" />
+        <result column="description" property="description"  jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime"  jdbcType="VARCHAR" />
+        <result column="update_time" property="updateTime"  jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="findEducationByUserId"  resultMap="BaseResultMap">
+        select * from education where user_id=#{userId}
+    </select>
+
+    <insert id="addEducationByUserId">
+        insert into education(id,user_id,university,graduation_date,qualification,field_of_study,grade,description,create_time,update_time)
+        values(#{id},#{userId},#{university},#{graduationDate},#{qualification},#{fieldOfStudy},#{grade},#{description},#{createTime},#{updateTime})
+    </insert>
+
+    <update id="updateEducation">
+        update education set
+        university = #{university},
+        graduation_date = #{graduation_date},
+        qualification = #{qualification},
+        field_of_study = #{fieldOfStudy},
+        grade = #{grade},
+        description = #{description},
+        update_time = #{updateTime}
+        where id = #{id} and user_id = #{userId}
+    </update>
+
+    <delete id="deleteEducationById">
+        delete from education where id =#{id}
+    </delete>
+</mapper>
