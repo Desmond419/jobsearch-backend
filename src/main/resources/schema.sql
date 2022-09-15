@@ -83,15 +83,21 @@ CREATE TABLE education
 
     FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+-- -----------
+-- Records of education
+-- -----------
+INSERT INTO education(id, user_id, university, graduation_date, qualification, field_of_study, grade, description)
+values ('1', '1', 'Monash University', 'May 2021', 'Bachelor Degree', 'Multimedia Design', 'CGPA 3.4', 'A fresh graduate who passionate in multimedia field');
 
--- ----------------------------
+-- -----------------------
 -- Table structure for job
--- ----------------------------
+-- -----------------------
 DROP TABLE IF EXISTS job;
 CREATE TABLE job
 (
     id                  VARCHAR(255) NOT NULL PRIMARY KEY COMMENT '用户id',
     position_title      VARCHAR(255) NOT NULL COMMENT '职位名称',
+    company_name        VARCHAR(255) NOT NULL COMMENT '公司名称',
     address_state       VARCHAR(255) NOT NULL COMMENT '工作所在州属',
     description         VARCHAR(255) NOT NULL COMMENT '工作内容描述',
     salary              VARCHAR(255) NOT NULL COMMENT '薪水',
@@ -101,6 +107,11 @@ CREATE TABLE job
     create_time         VARCHAR(255) COMMENT '创建时间',
     update_time         VARCHAR(255) COMMENT '更新时间'
 );
+-- --------------
+-- Records of job
+-- --------------
+INSERT INTO job(id, position_title, company_name, address_state, description, salary, career_level, qualification, type)
+values ('1', 'Financial Analyst', 'International Bank', 'Selangor', 'Perform financial forecasting, reporting, and operational metrics tracking', '5500', 'Senior', 'Bachelor Degree in Finance or equivalent', 'Full-time');
 
 -- ----------------------------
 -- Table structure for applications
@@ -113,12 +124,18 @@ CREATE TABLE applications
     job_id              VARCHAR(255) COMMENT 'job id',
     position_title      VARCHAR(255) NOT NULL COMMENT '职位名称',
     company_name        VARCHAR(255) NOT NULL COMMENT '公司名称',
-    status              INTEGER NOT NULL COMMENT '1 = 成功，0 = 失败, 2 = In progress',
+    status              VARCHAR(255) NOT NULL COMMENT '1 = 成功，0 = 失败, 2 = In progress',
     create_time         VARCHAR(255) COMMENT '创建时间',
     update_time         VARCHAR(255) COMMENT '更新时间',
 
     FOREIGN KEY (user_id) REFERENCES user (id) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (job_id) REFERENCES job (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
+-- -----------------------
+-- Records of applications
+-- -----------------------
+INSERT INTO applications(id, user_id, job_id, position_title, company_name, status)
+values ('1', '1', '1', 'Financial Analyst', 'International Bank', '2');
+
 
 SET FOREIGN_KEY_CHECKS = 1;

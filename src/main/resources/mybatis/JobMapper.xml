@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.learning.jobsearch.dao.JobDao">
+    <resultMap id="BaseResultMap"  type="com.learning.jobsearch.entity.Job" >
+        <result column="id" property="id"  jdbcType="VARCHAR" />
+        <result column="position_title" property="positionTitle"  jdbcType="VARCHAR" />
+        <result column="company_name" property="companyName"  jdbcType="VARCHAR" />
+        <result column="address_state" property="addressState"  jdbcType="VARCHAR" />
+        <result column="description" property="description"  jdbcType="VARCHAR" />
+        <result column="salary" property="salary"  jdbcType="VARCHAR" />
+        <result column="career_level" property="careerLevel"  jdbcType="VARCHAR" />
+        <result column="qualification" property="qualification"  jdbcType="VARCHAR" />
+        <result column="type" property="type"  jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime"  jdbcType="VARCHAR" />
+        <result column="update_time" property="updateTime"  jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="getAllJob"  resultMap="BaseResultMap">
+        select * from job
+    </select>
+
+    <select id="getJobByRelatedTitle"  resultMap="BaseResultMap">
+        select * from job where position_title like '%${key}%'
+    </select>
+
+    <insert id="addJob">
+        insert into job(id,position_title,company_name,address_state,description,salary,career_level,qualification,type,create_time,update_time)
+        values(#{id},#{positionTitle},#{companyName},#{addressState},#{description},#{salary},#{careerLevel},#{qualification},#{type},#{createTime},#{updateTime})
+    </insert>
+
+    <update id="updateJobById">
+        update job set
+        position_title = #{positionTitle},
+        company_name = #{companyName},
+        address_state = #{addressState},
+        description = #{description},
+        career_level = #{careerLevel},
+        salary = #{salary},
+        qualification = #{qualification},
+        type = #{type},
+        update_time = #{updateTime}
+        where id = #{id} and user_id = #{userId}
+    </update>
+
+    <delete id="deleteJobById">
+        delete from job where id =#{id}
+    </delete>
+</mapper>

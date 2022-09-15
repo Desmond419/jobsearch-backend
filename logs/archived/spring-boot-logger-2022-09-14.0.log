@@ -1,0 +1,775 @@
+2022-09-14 11:45:15,235 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 18940 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 11:45:15,238 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 11:45:15,239 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 11:45:16,546 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 11:45:16,556 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 11:45:16,556 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 11:45:16,556 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 11:45:16,646 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 11:45:16,646 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1341 ms
+2022-09-14 11:45:17,217 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 11:45:17,251 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 8a49c615-6e53-4688-b47d-62612c1378d1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 11:45:17,371 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17884d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68e24e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@38732372, org.springframework.security.web.header.HeaderWriterFilter@18e4551, org.springframework.web.filter.CorsFilter@c732e1c, org.springframework.security.web.authentication.logout.LogoutFilter@5409dfdd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@57c6feea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fee69a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54329480, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6aad919c, org.springframework.security.web.session.SessionManagementFilter@aca2fc3, org.springframework.security.web.access.ExceptionTranslationFilter@1187dc82, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15c16f19]
+2022-09-14 11:45:17,556 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 11:45:19,706 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 11:45:38,566 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 11:45:38,586 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 11:45:38,586 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 11:45:38,616 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 11:45:38,644 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 11:45:38,886 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 24.149 seconds (JVM running for 24.645)
+2022-09-14 11:46:58,368 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 11:47:00,300 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 11:47:34,075 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 18132 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 11:47:34,078 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 11:47:34,079 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 11:47:35,502 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 11:47:35,513 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 11:47:35,513 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 11:47:35,514 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 11:47:35,618 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 11:47:35,619 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1490 ms
+2022-09-14 11:47:36,207 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 11:47:36,236 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 762b968a-4078-4360-b6f0-3b23e6e07046
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 11:47:36,355 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@48c5698, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17884d, org.springframework.security.web.context.SecurityContextPersistenceFilter@76828577, org.springframework.security.web.header.HeaderWriterFilter@6fd1ea75, org.springframework.web.filter.CorsFilter@68e24e7, org.springframework.security.web.authentication.logout.LogoutFilter@1f172892, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@64b73e0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@639cb788, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36b53f08, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c732e1c, org.springframework.security.web.session.SessionManagementFilter@62058742, org.springframework.security.web.access.ExceptionTranslationFilter@37b1149b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e4ca109]
+2022-09-14 11:47:36,539 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 11:47:43,751 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 11:48:00,957 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 11:48:00,985 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 11:48:00,986 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 11:48:01,014 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 11:48:01,053 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 11:48:01,456 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 27.823 seconds (JVM running for 28.2)
+2022-09-14 11:49:07,778 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 11:49:09,708 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 11:49:11,723 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2fd953a6 - There is no conversion class registered for composite conversion word [purple]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2fd953a6 - Failed to create converter for [%purple] keyword
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.learning.jobsearch.JobsearchApplication.main(JobsearchApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2fd953a6 - There is no conversion class registered for composite conversion word [purple]
+ERROR in ch.qos.logback.core.pattern.parser.Compiler@2fd953a6 - Failed to create converter for [%purple] keyword
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+2022-09-14 11:49:34,233 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 4924 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 11:49:34,234 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 11:49:34,234 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 11:49:35,633 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 11:49:35,643 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 11:49:35,643 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 11:49:35,643 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 11:49:35,743 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 11:49:35,743 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1445 ms
+2022-09-14 11:49:36,343 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 11:49:36,388 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 346fae80-8e5c-4fa5-a9dd-82682aa9187e
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 11:49:36,528 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@48c5698, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17884d, org.springframework.security.web.context.SecurityContextPersistenceFilter@76828577, org.springframework.security.web.header.HeaderWriterFilter@6fd1ea75, org.springframework.web.filter.CorsFilter@68e24e7, org.springframework.security.web.authentication.logout.LogoutFilter@1f172892, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@64b73e0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@639cb788, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36b53f08, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c732e1c, org.springframework.security.web.session.SessionManagementFilter@62058742, org.springframework.security.web.access.ExceptionTranslationFilter@37b1149b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e4ca109]
+2022-09-14 11:49:36,718 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 11:49:38,979 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 11:49:57,533 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 11:49:57,553 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 11:49:57,553 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 11:49:57,576 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 11:49:57,598 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 11:49:57,816 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 24.061 seconds (JVM running for 24.502)
+2022-09-14 11:56:39,197 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 11:56:41,167 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 11:59:03,806 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 4880 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 11:59:03,811 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 11:59:03,811 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 11:59:05,258 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 11:59:05,271 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 11:59:05,271 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 11:59:05,271 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 11:59:05,370 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 11:59:05,370 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1504 ms
+2022-09-14 11:59:06,096 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 11:59:06,126 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 839a78d8-eadc-4da8-a91c-2aaf6bdf3463
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 11:59:06,291 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@68e24e7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c732e1c, org.springframework.security.web.context.SecurityContextPersistenceFilter@639cb788, org.springframework.security.web.header.HeaderWriterFilter@3ea48c37, org.springframework.web.filter.CorsFilter@6aad919c, org.springframework.security.web.authentication.logout.LogoutFilter@45f9d394, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3b57f915, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d25f816, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@590013c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56c42964, org.springframework.security.web.session.SessionManagementFilter@36df4c26, org.springframework.security.web.access.ExceptionTranslationFilter@6fd1ea75, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a17dd6f]
+2022-09-14 11:59:06,511 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 11:59:06,857 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 11:59:07,260 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 11:59:07,282 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 11:59:07,282 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 11:59:07,306 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 11:59:07,326 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 11:59:07,556 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 4.201 seconds (JVM running for 4.579)
+2022-09-14 12:05:04,541 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-14 12:05:04,541 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-09-14 12:05:04,543 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2022-09-14 12:05:04,683 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==>  Preparing: select * from user where email=?
+2022-09-14 12:05:04,710 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==> Parameters: admin@gmail.com(String)
+2022-09-14 12:05:04,747 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 12:05:04,748 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 12:05:04,753 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==      Total: 1
+2022-09-14 12:05:04,760 WARN org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder [http-nio-8080-exec-2] Encoded password does not look like BCrypt
+2022-09-14 12:08:51,684 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] ==>  Preparing: select * from user where email=?
+2022-09-14 12:08:51,685 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] ==> Parameters: admin@gmail.com(String)
+2022-09-14 12:08:51,687 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 12:08:51,688 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 12:08:51,689 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] <==      Total: 1
+2022-09-14 12:10:15,258 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-8] ==>  Preparing: select * from user where id=?
+2022-09-14 12:10:15,260 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-8] ==> Parameters: 1(String)
+2022-09-14 12:10:15,261 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-8] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 12:10:15,261 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-8] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 12:10:15,262 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-8] <==      Total: 1
+2022-09-14 12:10:50,177 WARN org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-9] No mapping for PUT /api/user/api/user
+2022-09-14 12:10:57,136 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] ==>  Preparing: update user set first_name = ?, last_name = ?, email = ?, mobile_no = ?, address = ?, address_city = ?, address_postal_code = ?, address_state = ?, address_country = ?, role = ?, update_time = ? where id = ?
+2022-09-14 12:10:57,137 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] ==> Parameters: Updated John(String), Updated Lee(String), Updated@gmail.com(String), 0123456789(String), Jln Maluri(String), KL(String), 54600(String), Kuala Lumpur(String), Malaysia(String), User(String), null, null
+2022-09-14 12:10:57,142 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==    Updates: 0
+2022-09-14 12:11:07,290 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==>  Preparing: select * from user where id=?
+2022-09-14 12:11:07,291 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==> Parameters: 1(String)
+2022-09-14 12:11:07,292 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 12:11:07,294 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 12:11:07,296 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==      Total: 1
+2022-09-14 12:13:41,505 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 12:13:41,505 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 12:13:44,829 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 21536 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 12:13:44,829 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 12:13:44,829 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 12:13:46,178 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 12:13:46,192 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 12:13:46,192 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 12:13:46,192 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 12:13:46,286 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 12:13:46,286 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1405 ms
+2022-09-14 12:13:46,866 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 12:13:46,898 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: e1d40a6a-630f-4ee1-9a77-3e0dd8c8abec
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 12:13:47,008 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@48c5698, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@17884d, org.springframework.security.web.context.SecurityContextPersistenceFilter@76828577, org.springframework.security.web.header.HeaderWriterFilter@6fd1ea75, org.springframework.web.filter.CorsFilter@68e24e7, org.springframework.security.web.authentication.logout.LogoutFilter@1f172892, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@64b73e0a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@639cb788, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36b53f08, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c732e1c, org.springframework.security.web.session.SessionManagementFilter@62058742, org.springframework.security.web.access.ExceptionTranslationFilter@37b1149b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e4ca109]
+2022-09-14 12:13:47,211 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 12:13:47,541 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 12:13:47,903 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 12:13:47,919 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 12:13:47,919 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 12:13:47,950 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 12:13:47,966 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 12:13:48,201 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 3.814 seconds (JVM running for 4.154)
+2022-09-14 12:25:39,436 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 12:25:39,451 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 13:16:09,715 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 17336 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 13:16:09,739 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 13:16:09,739 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 13:16:11,535 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 13:16:11,545 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 13:16:11,550 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 13:16:11,550 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 13:16:11,655 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 13:16:11,655 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1856 ms
+2022-09-14 13:16:12,450 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 13:16:12,486 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 9df7a4d8-251b-48b4-a29c-072884d7a851
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 13:16:12,610 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7eee6c13, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5ab63a04, org.springframework.security.web.context.SecurityContextPersistenceFilter@1187dc82, org.springframework.security.web.header.HeaderWriterFilter@d969452, org.springframework.web.filter.CorsFilter@677cc4e8, org.springframework.security.web.authentication.logout.LogoutFilter@6f07d414, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@e4ca109, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@18e4551, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@18026052, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c6bba7d, org.springframework.security.web.session.SessionManagementFilter@2c8a445b, org.springframework.security.web.access.ExceptionTranslationFilter@505d2bac, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1b47b7f5]
+2022-09-14 13:16:12,840 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 13:16:13,450 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 13:16:13,860 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 13:16:13,881 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 13:16:13,881 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 13:16:13,905 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 13:16:13,935 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 13:16:14,195 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 5.167 seconds (JVM running for 5.717)
+2022-09-14 13:16:21,535 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-14 13:16:21,535 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-09-14 13:16:21,537 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 2 ms
+2022-09-14 13:16:24,944 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==>  Preparing: select * from user where email=?
+2022-09-14 13:16:24,968 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==> Parameters: admin@gmail.com(String)
+2022-09-14 13:16:24,997 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 13:16:24,998 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 13:16:25,000 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==      Total: 1
+2022-09-14 13:16:25,006 WARN org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder [http-nio-8080-exec-3] Encoded password does not look like BCrypt
+2022-09-14 13:16:33,352 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-4] ==>  Preparing: select * from user where id=?
+2022-09-14 13:16:33,353 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-4] ==> Parameters: 1(String)
+2022-09-14 13:16:33,354 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-4] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 13:16:33,354 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-4] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 13:16:33,354 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-4] <==      Total: 1
+2022-09-14 13:16:33,356 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-4] ==>  Preparing: update user set first_name = ?, last_name = ?, email = ?, mobile_no = ?, address = ?, address_city = ?, address_postal_code = ?, address_state = ?, address_country = ?, role = ?, update_time = ? where id = ?
+2022-09-14 13:16:33,359 ERROR com.learning.jobsearch.controller.UserController [http-nio-8080-exec-4] updateUser error: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'firstName' not found. Available parameters are [id, user, param1, param2]
+2022-09-14 13:20:06,101 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 13:20:06,110 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 13:20:10,060 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 16724 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 13:20:10,065 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 13:20:10,065 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 13:20:11,470 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 13:20:11,480 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 13:20:11,480 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 13:20:11,480 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 13:20:11,580 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 13:20:11,580 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1461 ms
+2022-09-14 13:20:12,265 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 13:20:12,305 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 1fd00c22-f253-4a6c-89ae-396ae8d8bfdb
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 13:20:12,440 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57c6feea, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b57f915, org.springframework.security.web.context.SecurityContextPersistenceFilter@388f1258, org.springframework.security.web.header.HeaderWriterFilter@2c8a445b, org.springframework.web.filter.CorsFilter@39c7fb0b, org.springframework.security.web.authentication.logout.LogoutFilter@16ac4d3d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3a16984c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@aca2fc3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fee69a1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@645dc557, org.springframework.security.web.session.SessionManagementFilter@6e068ac9, org.springframework.security.web.access.ExceptionTranslationFilter@11d2714a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1322b575]
+2022-09-14 13:20:12,624 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 13:20:12,922 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 13:20:13,287 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 13:20:13,303 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 13:20:13,303 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 13:20:13,325 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 13:20:13,355 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 13:20:13,607 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 3.99 seconds (JVM running for 4.333)
+2022-09-14 13:20:40,033 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-14 13:20:40,033 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-09-14 13:20:40,033 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2022-09-14 13:20:40,165 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==>  Preparing: select * from user where id=?
+2022-09-14 13:20:40,190 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==> Parameters: 1(String)
+2022-09-14 13:20:40,225 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 13:20:40,225 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 13:20:40,225 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==      Total: 1
+2022-09-14 13:20:40,233 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==>  Preparing: update user set first_name = ?, last_name = ?, email = ?, mobile_no = ?, address = ?, address_city = ?, address_postal_code = ?, address_state = ?, address_country = ?, role = ?, update_time = ? where id = ?
+2022-09-14 13:20:40,233 ERROR com.learning.jobsearch.controller.UserController [http-nio-8080-exec-2] updateUser error: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'firstName' not found. Available parameters are [id, user, param1, param2]
+2022-09-14 13:20:56,535 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 13:20:56,544 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 13:20:59,019 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 18356 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 13:20:59,024 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 13:20:59,028 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 13:21:00,579 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 13:21:00,581 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 13:21:00,589 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 13:21:00,589 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 13:21:00,690 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 13:21:00,690 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1611 ms
+2022-09-14 13:21:01,440 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 13:21:01,475 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 4c8dc12e-4ecb-4ab5-bbbd-c6d834556745
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 13:21:01,599 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@26ffd2c0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d28c214, org.springframework.security.web.context.SecurityContextPersistenceFilter@64dfb31d, org.springframework.security.web.header.HeaderWriterFilter@7f8c3646, org.springframework.web.filter.CorsFilter@2fc7fa6e, org.springframework.security.web.authentication.logout.LogoutFilter@29b5533, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5e24592e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17b6ad97, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6136e1fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f8c48f3, org.springframework.security.web.session.SessionManagementFilter@37c2f0b4, org.springframework.security.web.access.ExceptionTranslationFilter@ce561cc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2037f12b]
+2022-09-14 13:21:01,833 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 13:21:02,190 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 13:21:02,539 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 13:21:02,570 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 13:21:02,570 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 13:21:02,590 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 13:21:02,624 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 13:21:02,862 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 4.342 seconds (JVM running for 5.36)
+2022-09-14 13:21:09,625 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-14 13:21:09,625 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-09-14 13:21:09,630 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 5 ms
+2022-09-14 13:21:24,936 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==>  Preparing: select * from user where id=?
+2022-09-14 13:21:25,111 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==> Parameters: 1(String)
+2022-09-14 13:21:25,282 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 13:21:25,284 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 13:21:25,292 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==      Total: 1
+2022-09-14 13:22:27,507 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m25s217ms98µs800ns).
+2022-09-14 13:22:27,513 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==>  Preparing: update user set first_name = ?, last_name = ?, email = ?, mobile_no = ?, address = ?, address_city = ?, address_postal_code = ?, address_state = ?, address_country = ?, role = ?, update_time = ? where id = ?
+2022-09-14 13:22:27,524 ERROR com.learning.jobsearch.controller.UserController [http-nio-8080-exec-2] updateUser error: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'firstName' not found. Available parameters are [id, user, param1, param2]
+2022-09-14 13:22:27,558 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 13:22:27,568 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 13:24:08,928 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 21452 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 13:24:08,931 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 13:24:08,932 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 13:24:10,388 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 13:24:10,397 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 13:24:10,398 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 13:24:10,398 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 13:24:10,500 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 13:24:10,501 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1515 ms
+2022-09-14 13:24:11,129 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 13:24:11,161 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 910369ae-de0e-4bb3-8f7f-4d5ffff24871
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 13:24:11,294 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@17884d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@68e24e7, org.springframework.security.web.context.SecurityContextPersistenceFilter@38732372, org.springframework.security.web.header.HeaderWriterFilter@18e4551, org.springframework.web.filter.CorsFilter@c732e1c, org.springframework.security.web.authentication.logout.LogoutFilter@5409dfdd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@57c6feea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2fee69a1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54329480, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6aad919c, org.springframework.security.web.session.SessionManagementFilter@aca2fc3, org.springframework.security.web.access.ExceptionTranslationFilter@1187dc82, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15c16f19]
+2022-09-14 13:24:11,499 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 13:24:11,802 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 13:24:12,142 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 13:24:12,158 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 13:24:12,159 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 13:24:12,191 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 13:24:12,218 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 13:24:12,465 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 3.989 seconds (JVM running for 4.387)
+2022-09-14 13:24:18,749 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-14 13:24:18,749 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-09-14 13:24:18,751 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-09-14 13:24:18,875 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==>  Preparing: update user set first_name = ?, last_name = ?, email = ?, mobile_no = ?, address = ?, address_city = ?, address_postal_code = ?, address_state = ?, address_country = ?, role = ?, update_time = ? where id = ?
+2022-09-14 13:24:18,901 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] ==> Parameters: Updated John(String), Updated Lee(String), Updated@gmail.com(String), 0123456789(String), Jln Maluri(String), KL(String), 54600(String), Kuala Lumpur(String), Malaysia(String), User(String), null, 1(String)
+2022-09-14 13:24:18,914 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-2] <==    Updates: 1
+2022-09-14 13:24:43,051 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==>  Preparing: select * from user where id=?
+2022-09-14 13:24:43,052 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==> Parameters: 1(String)
+2022-09-14 13:24:43,077 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 13:24:43,078 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==        Row: 1, Updated John, Updated Lee, Updated@gmail.com, admin, 12-01-1920, 0123456789, Male, Jln Maluri, Kuala Lumpur, 54600, KL, Malaysia, 950516105361, User, null, null, null
+2022-09-14 13:24:43,081 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==      Total: 1
+2022-09-14 13:25:13,539 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'DELETE' not supported]
+2022-09-14 13:25:49,947 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] ==>  Preparing: delete from user where id =?
+2022-09-14 13:25:49,948 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] ==> Parameters: 1(String)
+2022-09-14 13:25:49,953 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] <==    Updates: 1
+2022-09-14 13:31:39,345 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 13:31:39,354 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 14:57:05,559 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 9640 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 14:57:05,563 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 14:57:05,563 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 14:57:06,948 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 14:57:06,958 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 14:57:06,958 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 14:57:06,961 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 14:57:07,053 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 14:57:07,053 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1435 ms
+2022-09-14 14:57:07,958 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 14:57:08,143 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: f769d7d8-a59e-49ca-8ac9-7dd530089e01
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 14:57:08,338 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4efb13f1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb4ed71, org.springframework.security.web.context.SecurityContextPersistenceFilter@8ac12e6, org.springframework.security.web.header.HeaderWriterFilter@639cb788, org.springframework.web.filter.CorsFilter@5112b7, org.springframework.security.web.authentication.logout.LogoutFilter@451816fd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@c262f2f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@734fbae3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a861417, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@56835f2f, org.springframework.security.web.session.SessionManagementFilter@1fcaea93, org.springframework.security.web.access.ExceptionTranslationFilter@76828577, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57c6feea]
+2022-09-14 14:57:08,608 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 14:57:08,893 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 14:57:09,073 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #9 of URL [file:/D:/User/Desktop/Job%20Search/jobsearch-backend/target/classes/schema.sql]: INSERT INTO experience(id, position_title, company_name, duration_from, duration_to, position_level, salary, description) values ('1', 'Software Developer', 'IT Solution', '12-01-2017', '31-01-2020', 'Manager', '8500', 'An experienced Software Manager'); nested exception is java.sql.SQLException: Field 'user_id' doesn't have a default value
+2022-09-14 14:57:09,078 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown initiated...
+2022-09-14 14:57:09,092 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Shutdown completed.
+2022-09-14 14:57:09,097 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2022-09-14 14:57:09,103 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-14 14:57:09,124 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #9 of URL [file:/D:/User/Desktop/Job%20Search/jobsearch-backend/target/classes/schema.sql]: INSERT INTO experience(id, position_title, company_name, duration_from, duration_to, position_level, salary, description) values ('1', 'Software Developer', 'IT Solution', '12-01-2017', '31-01-2020', 'Manager', '8500', 'An experienced Software Manager'); nested exception is java.sql.SQLException: Field 'user_id' doesn't have a default value
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.learning.jobsearch.JobsearchApplication.main(JobsearchApplication.java:10)
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #9 of URL [file:/D:/User/Desktop/Job%20Search/jobsearch-backend/target/classes/schema.sql]: INSERT INTO experience(id, position_title, company_name, duration_from, duration_to, position_level, salary, description) values ('1', 'Software Developer', 'IT Solution', '12-01-2017', '31-01-2020', 'Manager', '8500', 'An experienced Software Manager'); nested exception is java.sql.SQLException: Field 'user_id' doesn't have a default value
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:282)
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254)
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:90)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:145)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:107)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:97)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:75)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: java.sql.SQLException: Field 'user_id' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.StatementImpl.executeInternal(StatementImpl.java:763)
+	at com.mysql.cj.jdbc.StatementImpl.execute(StatementImpl.java:648)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261)
+	... 28 common frames omitted
+2022-09-14 14:58:39,288 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 12868 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 14:58:39,288 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 14:58:39,293 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 14:58:40,665 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 14:58:40,673 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 14:58:40,673 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 14:58:40,678 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 14:58:40,788 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 14:58:40,788 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1445 ms
+2022-09-14 14:58:41,438 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 14:58:41,473 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 574efb0d-63b0-403f-b79e-d19855eeda9c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 14:58:41,598 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40f1aa95, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c72189f, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a6a6a69, org.springframework.security.web.header.HeaderWriterFilter@6a4af081, org.springframework.web.filter.CorsFilter@14be750c, org.springframework.security.web.authentication.logout.LogoutFilter@c497a55, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@60a01cb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53e93fb7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@16ac4d3d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58882a93, org.springframework.security.web.session.SessionManagementFilter@40faff12, org.springframework.security.web.access.ExceptionTranslationFilter@4d25f816, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@48c5698]
+2022-09-14 14:58:41,801 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 14:58:42,083 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 14:58:42,483 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 14:58:42,503 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 14:58:42,503 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 14:58:42,523 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 14:58:42,548 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 14:58:42,818 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 3.977 seconds (JVM running for 4.34)
+2022-09-14 15:00:53,978 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-14 15:00:53,979 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-09-14 15:00:53,981 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-09-14 15:00:54,108 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==>  Preparing: select * from user where email=?
+2022-09-14 15:00:54,153 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==> Parameters: admin@gmail.com(String)
+2022-09-14 15:00:54,193 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 15:00:54,193 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 15:00:54,197 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==      Total: 1
+2022-09-14 15:00:54,205 WARN org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder [http-nio-8080-exec-1] Encoded password does not look like BCrypt
+2022-09-14 15:01:05,101 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==>  Preparing: select * from user where id=?
+2022-09-14 15:01:05,101 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==> Parameters: 1(String)
+2022-09-14 15:01:05,103 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 15:01:05,104 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 15:01:05,105 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==      Total: 1
+2022-09-14 15:01:05,107 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==>  Preparing: select * from experience where user_id=?
+2022-09-14 15:01:05,108 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] ==> Parameters: 1(String)
+2022-09-14 15:01:05,111 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==    Columns: id, user_id, position_title, company_name, duration_from, duration_to, position_level, salary, description, create_time, update_time
+2022-09-14 15:01:05,111 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-3] <==        Row: 1, 1, Software Developer, IT Solution, 12-01-2017, 31-01-2020, Manager, 8500, An experienced Software Manager, null, null
+2022-09-14 15:01:05,113 ERROR com.learning.jobsearch.controller.ExperienceController [http-nio-8080-exec-3] getExperienceByUserId error: nested exception is org.apache.ibatis.reflection.ReflectionException: Could not set property 'description' of 'class com.learning.jobsearch.entity.Experience' with value 'An experienced Software Manager' Cause: org.apache.ibatis.reflection.ReflectionException: There is no setter for property named 'description' in 'class com.learning.jobsearch.entity.Experience'
+2022-09-14 15:02:12,696 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 15:02:12,703 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 15:02:27,583 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 19088 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 15:02:27,585 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 15:02:27,586 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 15:02:28,971 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 15:02:28,981 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:02:28,981 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 15:02:28,982 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 15:02:29,078 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 15:02:29,079 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1436 ms
+2022-09-14 15:02:29,701 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 15:02:29,732 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: c5550a93-c499-4f53-a6eb-d31ce1bbaba7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 15:02:29,863 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c72189f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14be750c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1fcaea93, org.springframework.security.web.header.HeaderWriterFilter@36df4c26, org.springframework.web.filter.CorsFilter@58882a93, org.springframework.security.web.authentication.logout.LogoutFilter@656ec00d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4efb13f1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f07d414, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a6a6a69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@15e08615, org.springframework.security.web.session.SessionManagementFilter@7b211077, org.springframework.security.web.access.ExceptionTranslationFilter@62058742, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a3ad8e7]
+2022-09-14 15:02:30,068 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 15:02:30,358 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 15:02:30,731 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:02:30,748 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 15:02:30,749 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 15:02:30,768 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 15:02:30,797 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 15:02:31,060 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 3.902 seconds (JVM running for 4.263)
+2022-09-14 15:02:34,207 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-09-14 15:02:34,208 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-09-14 15:02:34,210 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 2 ms
+2022-09-14 15:02:34,350 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==>  Preparing: select * from user where id=?
+2022-09-14 15:02:34,384 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==> Parameters: 1(String)
+2022-09-14 15:02:34,431 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 15:02:34,432 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 15:02:34,436 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==      Total: 1
+2022-09-14 15:02:34,446 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==>  Preparing: select * from experience where user_id=?
+2022-09-14 15:02:34,447 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] ==> Parameters: 1(String)
+2022-09-14 15:02:34,450 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==    Columns: id, user_id, position_title, company_name, duration_from, duration_to, position_level, salary, description, create_time, update_time
+2022-09-14 15:02:34,451 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==        Row: 1, 1, Software Developer, IT Solution, 12-01-2017, 31-01-2020, Manager, 8500, An experienced Software Manager, null, null
+2022-09-14 15:02:34,452 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-1] <==      Total: 1
+2022-09-14 15:06:23,408 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] ==>  Preparing: select * from user where id=?
+2022-09-14 15:06:23,409 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] ==> Parameters: 1(String)
+2022-09-14 15:06:23,411 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 15:06:23,412 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 15:06:23,413 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] <==      Total: 1
+2022-09-14 15:06:23,415 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] ==>  Preparing: insert into experience(id,user_id,position_title,company_name,duration_from,duration_to,position_level,salary,description,create_time,update_time) values(?,?,?,?,?,?,?,?,?,?,?)
+2022-09-14 15:06:23,416 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] ==> Parameters: 86e1f8d2-5268-48cb-a42e-3359adf51136(String), 1(String), Test add Software Developer(String), IT Solution(String), 12-01-2017(String), 31-01-2020(String), Manager(String), 10000(String), An experienced Software Manager(String), 2022-09-14 15:06:23(String), 2022-09-14 15:06:23(String)
+2022-09-14 15:06:23,421 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-5] <==    Updates: 1
+2022-09-14 15:06:33,152 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==>  Preparing: select * from user where id=?
+2022-09-14 15:06:33,152 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==> Parameters: 1(String)
+2022-09-14 15:06:33,153 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 15:06:33,154 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 15:06:33,155 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==      Total: 1
+2022-09-14 15:06:33,155 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==>  Preparing: select * from experience where user_id=?
+2022-09-14 15:06:33,158 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==> Parameters: 1(String)
+2022-09-14 15:06:33,159 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==    Columns: id, user_id, position_title, company_name, duration_from, duration_to, position_level, salary, description, create_time, update_time
+2022-09-14 15:06:33,160 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==        Row: 1, 1, Software Developer, IT Solution, 12-01-2017, 31-01-2020, Manager, 8500, An experienced Software Manager, null, null
+2022-09-14 15:06:33,160 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==        Row: 86e1f8d2-5268-48cb-a42e-3359adf51136, 1, Test add Software Developer, IT Solution, 12-01-2017, 31-01-2020, Manager, 10000, An experienced Software Manager, 2022-09-14 15:06:23, 2022-09-14 15:06:23
+2022-09-14 15:06:33,160 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==      Total: 2
+2022-09-14 15:08:32,532 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-9] ==>  Preparing: update experience set position_title = ?, company_name = ?, duration_from = ?, duration_to = ?, position_level = ?, salary = ?, update_time = ? where id = ? and user_id = ?
+2022-09-14 15:08:32,533 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-9] ==> Parameters: Updated Software Developer(String), IT Solution(String), 12-01-2017(String), 31-01-2020(String), Manager(String), 10000(String), 2022-09-14 15:08:32(String), 86e1f8d2-5268-48cb-a42e-3359adf51136(String), 1(String)
+2022-09-14 15:08:32,539 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-9] <==    Updates: 1
+2022-09-14 15:08:41,820 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] ==>  Preparing: select * from user where id=?
+2022-09-14 15:08:41,821 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] ==> Parameters: 1(String)
+2022-09-14 15:08:41,824 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 15:08:41,825 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 15:08:41,826 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==      Total: 1
+2022-09-14 15:08:41,827 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] ==>  Preparing: select * from experience where user_id=?
+2022-09-14 15:08:41,828 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] ==> Parameters: 1(String)
+2022-09-14 15:08:41,831 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==    Columns: id, user_id, position_title, company_name, duration_from, duration_to, position_level, salary, description, create_time, update_time
+2022-09-14 15:08:41,831 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==        Row: 1, 1, Software Developer, IT Solution, 12-01-2017, 31-01-2020, Manager, 8500, An experienced Software Manager, null, null
+2022-09-14 15:08:41,832 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==        Row: 86e1f8d2-5268-48cb-a42e-3359adf51136, 1, Updated Software Developer, IT Solution, 12-01-2017, 31-01-2020, Manager, 10000, An experienced Software Manager, 2022-09-14 15:06:23, 2022-09-14 15:08:32
+2022-09-14 15:08:41,832 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-10] <==      Total: 2
+2022-09-14 15:11:32,380 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-09-14 15:11:36,717 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-4] ==>  Preparing: delete from experience where id =?
+2022-09-14 15:11:36,718 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-4] ==> Parameters: 1(String)
+2022-09-14 15:11:36,724 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-4] <==    Updates: 1
+2022-09-14 15:11:41,384 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-5] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2022-09-14 15:11:49,639 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==>  Preparing: select * from user where id=?
+2022-09-14 15:11:49,640 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==> Parameters: 1(String)
+2022-09-14 15:11:49,643 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==    Columns: id, first_name, last_name, email, password, dob, mobile_no, gender, address, address_state, address_postal_code, address_city, address_country, id_no, role, img, create_time, update_time
+2022-09-14 15:11:49,643 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==        Row: 1, admin, admin, admin@gmail.com, admin, 12-01-1920, 0123456789, Male, No 5, Jalan 20, Taman Malaysia, Kuala Lumpur, 57600, KL, Malaysia, 950516105361, Admin, null, null, null
+2022-09-14 15:11:49,648 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==      Total: 1
+2022-09-14 15:11:49,648 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==>  Preparing: select * from experience where user_id=?
+2022-09-14 15:11:49,649 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] ==> Parameters: 1(String)
+2022-09-14 15:11:49,653 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==    Columns: id, user_id, position_title, company_name, duration_from, duration_to, position_level, salary, description, create_time, update_time
+2022-09-14 15:11:49,654 TRACE org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==        Row: 86e1f8d2-5268-48cb-a42e-3359adf51136, 1, Updated Software Developer, IT Solution, 12-01-2017, 31-01-2020, Manager, 10000, An experienced Software Manager, 2022-09-14 15:06:23, 2022-09-14 15:08:32
+2022-09-14 15:11:49,654 DEBUG org.apache.ibatis.logging.jdbc.BaseJdbcLogger [http-nio-8080-exec-6] <==      Total: 1
+2022-09-14 15:13:26,917 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 15:13:26,925 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 15:29:20,044 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 14980 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 15:29:20,047 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 15:29:20,048 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 15:29:21,407 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 15:29:21,417 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:29:21,418 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 15:29:21,418 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 15:29:21,522 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 15:29:21,522 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1425 ms
+2022-09-14 15:29:21,857 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'educationController': Unsatisfied dependency expressed through field 'educationService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'educationServiceImpl': Unsatisfied dependency expressed through field 'educationDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.learning.jobsearch.dao.EducationDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-09-14 15:29:21,860 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2022-09-14 15:29:21,871 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-14 15:29:21,890 ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [main] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field educationDao in com.learning.jobsearch.service.impl.EducationServiceImpl required a bean of type 'com.learning.jobsearch.dao.EducationDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.learning.jobsearch.dao.EducationDao' in your configuration.
+
+2022-09-14 15:30:01,199 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 20172 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 15:30:01,201 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 15:30:01,202 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 15:30:02,517 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 15:30:02,525 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:30:02,526 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 15:30:02,526 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 15:30:02,611 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 15:30:02,611 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1361 ms
+2022-09-14 15:30:03,157 WARN org.springframework.context.support.AbstractApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/User/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/User/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'experienceController' method 
+com.learning.jobsearch.controller.ExperienceController#deleteExperienceById(String)
+to {DELETE [/api/exp/{id}]}: There is already 'educationController' bean method
+com.learning.jobsearch.controller.EducationController#deleteEducationById(String) mapped.
+2022-09-14 15:30:03,162 INFO org.apache.juli.logging.DirectJDKLog [main] Stopping service [Tomcat]
+2022-09-14 15:30:03,172 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [main] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-14 15:30:03,191 ERROR org.springframework.boot.SpringApplication [main] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/User/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/User/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'experienceController' method 
+com.learning.jobsearch.controller.ExperienceController#deleteExperienceById(String)
+to {DELETE [/api/exp/{id}]}: There is already 'educationController' bean method
+com.learning.jobsearch.controller.EducationController#deleteEducationById(String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.learning.jobsearch.JobsearchApplication.main(JobsearchApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/User/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'experienceController' method 
+com.learning.jobsearch.controller.ExperienceController#deleteExperienceById(String)
+to {DELETE [/api/exp/{id}]}: There is already 'educationController' bean method
+com.learning.jobsearch.controller.EducationController#deleteEducationById(String) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'experienceController' method 
+com.learning.jobsearch.controller.ExperienceController#deleteExperienceById(String)
+to {DELETE [/api/exp/{id}]}: There is already 'educationController' bean method
+com.learning.jobsearch.controller.EducationController#deleteEducationById(String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'experienceController' method 
+com.learning.jobsearch.controller.ExperienceController#deleteExperienceById(String)
+to {DELETE [/api/exp/{id}]}: There is already 'educationController' bean method
+com.learning.jobsearch.controller.EducationController#deleteEducationById(String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 50 common frames omitted
+2022-09-14 15:30:45,338 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 18084 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 15:30:45,342 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 15:30:45,343 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 15:30:46,768 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 15:30:46,779 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:30:46,780 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 15:30:46,781 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 15:30:46,912 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 15:30:46,912 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1516 ms
+2022-09-14 15:30:47,590 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 15:30:47,628 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: a39c3d10-9cdf-4eca-a342-15142e5d2a79
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 15:30:47,764 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39ace1a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1930a804, org.springframework.security.web.context.SecurityContextPersistenceFilter@719c1faf, org.springframework.security.web.header.HeaderWriterFilter@6c9bf3b5, org.springframework.web.filter.CorsFilter@bd4ee01, org.springframework.security.web.authentication.logout.LogoutFilter@19bf47fc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@15e08615, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f172892, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20b54cfe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f93f4c, org.springframework.security.web.session.SessionManagementFilter@1c00d406, org.springframework.security.web.access.ExceptionTranslationFilter@62b0bf85, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45d389f2]
+2022-09-14 15:30:47,943 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 15:30:48,230 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 15:30:48,562 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:30:48,579 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 15:30:48,580 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 15:30:48,598 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 15:30:48,625 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 15:30:48,873 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 3.965 seconds (JVM running for 4.297)
+2022-09-14 15:30:51,843 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 15:30:51,849 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 15:44:17,961 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 17736 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 15:44:17,964 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 15:44:17,965 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 15:44:19,355 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 15:44:19,363 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:44:19,364 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 15:44:19,365 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 15:44:19,454 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 15:44:19,455 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1435 ms
+2022-09-14 15:44:20,105 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 15:44:20,137 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 5a24fd78-e2d6-4f77-a25a-1834a1aef1f5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 15:44:20,263 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@39ace1a7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1930a804, org.springframework.security.web.context.SecurityContextPersistenceFilter@719c1faf, org.springframework.security.web.header.HeaderWriterFilter@6c9bf3b5, org.springframework.web.filter.CorsFilter@bd4ee01, org.springframework.security.web.authentication.logout.LogoutFilter@19bf47fc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@15e08615, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f172892, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20b54cfe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f93f4c, org.springframework.security.web.session.SessionManagementFilter@1c00d406, org.springframework.security.web.access.ExceptionTranslationFilter@62b0bf85, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45d389f2]
+2022-09-14 15:44:20,450 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 15:44:28,383 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 15:44:39,058 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:44:39,083 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 15:44:39,083 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 15:44:39,103 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 15:44:39,136 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 15:44:39,423 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 21.883 seconds (JVM running for 22.213)
+2022-09-14 15:44:44,933 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 15:44:45,903 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-09-14 15:44:49,183 INFO org.springframework.boot.StartupInfoLogger [main] Starting JobsearchApplication using Java 16.0.2 on LAPTOP-0RD4O4D6 with PID 5308 (D:\User\Desktop\Job Search\jobsearch-backend\target\classes started by User in D:\User\Desktop\Job Search\jobsearch-backend)
+2022-09-14 15:44:49,185 DEBUG org.springframework.boot.StartupInfoLogger [main] Running with Spring Boot v2.7.2, Spring v5.3.22
+2022-09-14 15:44:49,185 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2022-09-14 15:44:50,543 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2022-09-14 15:44:50,552 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:44:50,552 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2022-09-14 15:44:50,552 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-14 15:44:50,657 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2022-09-14 15:44:50,657 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1415 ms
+2022-09-14 15:44:51,287 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [main] Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-09-14 15:44:51,332 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [main] 
+
+Using generated security password: 4f9e5029-f06c-4617-99b5-e04503de278d
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-09-14 15:44:51,463 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2321e482, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@467ef400, org.springframework.security.web.context.SecurityContextPersistenceFilter@7185e611, org.springframework.security.web.header.HeaderWriterFilter@16ac4d3d, org.springframework.web.filter.CorsFilter@13fe5bb7, org.springframework.security.web.authentication.logout.LogoutFilter@2fb082ff, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4cfcac13, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@384472bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56e5c8fb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4276ad40, org.springframework.security.web.session.SessionManagementFilter@2262f0d8, org.springframework.security.web.access.ExceptionTranslationFilter@68e47e7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c72189f]
+2022-09-14 15:44:51,646 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2022-09-14 15:44:53,723 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2022-09-14 15:45:04,573 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2022-09-14 15:45:04,593 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2022-09-14 15:45:04,593 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+2022-09-14 15:45:04,613 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2022-09-14 15:45:04,643 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+2022-09-14 15:45:04,888 INFO org.springframework.boot.StartupInfoLogger [main] Started JobsearchApplication in 16.13 seconds (JVM running for 16.474)
+2022-09-14 15:46:25,722 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-09-14 15:46:27,682 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

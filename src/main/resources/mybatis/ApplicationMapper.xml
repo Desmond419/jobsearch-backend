@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.learning.jobsearch.dao.ApplicationDao">
+    <resultMap id="BaseResultMap"  type="com.learning.jobsearch.entity.Application" >
+        <result column="id" property="id"  jdbcType="VARCHAR" />
+        <result column="user_id" property="userId"  jdbcType="VARCHAR" />
+        <result column="job_id" property="jobId"  jdbcType="VARCHAR" />
+        <result column="position_title" property="positionTitle"  jdbcType="VARCHAR" />
+        <result column="company_name" property="companyName"  jdbcType="VARCHAR" />
+        <result column="status" property="status"  jdbcType="VARCHAR" />
+        <result column="create_time" property="createTime"  jdbcType="VARCHAR" />
+        <result column="update_time" property="updateTime"  jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="getAllApplications"  resultMap="BaseResultMap">
+        select * from applications
+    </select>
+
+    <select id="getApplicationsByUserId"  resultMap="BaseResultMap">
+        select * from applications where user_id=#{userId}
+    </select>
+
+    <insert id="applyJob">
+        insert into applications(id,user_id,job_id,position_title,company_name,status,create_time,update_time)
+        values(#{id},#{userId},#{jobId},#{positionTitle},#{companyName},#{status},#{createTime},#{updateTime})
+    </insert>
+
+    <update id="updateStatus">
+        update applications set
+        status = #{status},
+        update_time = #{updateTime}
+        where id = #{id}
+    </update>
+</mapper>
